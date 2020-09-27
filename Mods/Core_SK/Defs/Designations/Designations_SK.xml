@@ -1,28 +1,89 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+
 	<DesignationDef>
 		<defName>CollectSand</defName>
 		<texturePath>UI/Designators/Collect</texturePath>
 		<targetType>Cell</targetType>
+		<modExtensions>
+			<li Class="SK.DesignatorExtension">
+				<allowedTerrains>
+					<li>SoftSand</li>
+					<li>Sand</li>
+				</allowedTerrains>
+				<workToCollect>7500</workToCollect>
+				<products>
+					<SandResource>23</SandResource>
+				</products>
+			</li>
+		</modExtensions>
 	</DesignationDef>
 
 	<DesignationDef>
 		<defName>CollectPeat</defName>
 		<texturePath>UI/Designators/Collect</texturePath>
 		<targetType>Cell</targetType>
+		<modExtensions>
+			<li Class="SK.DesignatorExtension">
+				<allowedTerrains>
+					<li>Mud</li>
+					<li>SoilRich</li>
+					<li>Marsh</li>
+					<li>MarshyTerrain</li>
+					<li>WaterShallow</li>
+					<li>WaterMovingShallow</li>
+					<li>WaterOceanShallow</li>
+					<li>MossyTerrain</li>
+					<li>MarginalSoil</li>
+					<li>SavannaSoil</li>
+				</allowedTerrains>
+				<workToCollect>8000</workToCollect>
+				<products>
+					<Peat>22</Peat>
+				</products>
+			</li>
+		</modExtensions>
 	</DesignationDef>
 
 	<DesignationDef>
 		<defName>CollectCrushedstone</defName>
 		<texturePath>UI/Designators/Collect</texturePath>
 		<targetType>Cell</targetType>
+		<modExtensions>
+			<li Class="SK.DesignatorExtension">
+				<allowedTerrains>
+					<li>Gravel</li>
+				</allowedTerrains>
+				<workToCollect>5000</workToCollect>
+				<products>
+					<CrushedStone>16</CrushedStone>
+				</products>
+			</li>
+		</modExtensions>
 	</DesignationDef>
 
 	<DesignationDef>
 		<defName>CollectClay</defName>
 		<texturePath>UI/Designators/Collect</texturePath>
 		<targetType>Cell</targetType>
+		<modExtensions>
+			<li Class="SK.DesignatorExtension">
+				<allowedTerrains>
+					<li>Mud</li>
+					<li>SoilRich</li>
+					<li>Marsh</li>
+					<li>MarshyTerrain</li>
+					<li>WaterShallow</li>
+					<li>WaterMovingShallow</li>
+					<li>MossyTerrain</li>
+				</allowedTerrains>
+				<workToCollect>7500</workToCollect>
+				<products>
+					<SoftClay>20</SoftClay>
+				</products>
+			</li>
+		</modExtensions>
 	</DesignationDef>
 
 	<DesignationDef>
